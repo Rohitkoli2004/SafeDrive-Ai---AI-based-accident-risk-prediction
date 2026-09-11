@@ -226,6 +226,7 @@ Accident Risk Result
 <img width="940" height="463" alt="image" src="https://github.com/user-attachments/assets/f5349275-2e6c-438d-b656-928150ddb9f9" />
  
 Analytics
+
 <img width="940" height="361" alt="image" src="https://github.com/user-attachments/assets/f773b620-7f35-4e5e-bbfc-d445824c8166" />
 ________________________________________
 👨‍💻 Author
