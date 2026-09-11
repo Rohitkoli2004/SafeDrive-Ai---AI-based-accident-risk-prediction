@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics - SafeDrive AI</title>
+
+    <link rel="stylesheet" href="analytics.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-left-buttons">
+        <button onclick="goHome()">⏻</button>
+        <button onclick="goDashboard()">📊</button>
+    </div>
+</div>
+
+<h1 class="title">Analytics Dashboard</h1>
+
+<!-- STATS -->
+<div class="stats">
+    <div class="card" id="totalCard">Total: 0</div>
+    <div class="card" id="highCard">High %: 0</div>
+    <div class="card" id="avgCard">Avg Prob: 0</div>
+    <div class="card" id="commonCard">Common: -</div>
+</div>
+
+<!-- EMPTY STATE -->
+<div id="emptyMsg">No data available. Run predictions first.</div>
+
+<!-- CHARTS -->
+<div class="charts-container" id="chartsSection">
+
+    <div class="chart-box">
+        <h3>Risk Distribution</h3>
+        <canvas id="riskChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Prediction Timeline</h3>
+        <canvas id="timelineChart"></canvas>
+    </div>
+
+</div>
+
+<script src="analytics.js"></script>
+</body>
+</html>

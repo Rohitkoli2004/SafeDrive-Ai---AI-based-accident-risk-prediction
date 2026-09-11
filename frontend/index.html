@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeDrive AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="topbar">
+
+        <div class="left-icons">
+
+            <button class="icon-btn" onclick="goHome()">
+                <i class="fa-solid fa-house"></i>
+            </button>
+
+            <button class="icon-btn" onclick="goAnalytics()">
+                <i class="fa-solid fa-bolt"></i>
+            </button>
+
+        </div>
+
+        <div class="title-box">
+            <h1>SafeDrive AI</h1>
+            <p>AI Based Accident Prediction</p>
+        </div>
+
+        <div class="right-icons">
+
+            <button class="icon-btn" onclick="getLocation()">
+                <i class="fa-solid fa-location-dot"></i>
+            </button>
+
+         <div class="right-icons">
+            <button class="icon-btn" onclick="goSettings()">⚙</button>
+        </div>
+        </div>
+
+    </header>
+
+    <!-- ================= STATUS ================= -->
+    <section class="status-section">
+
+        <div class="status-card">
+            Total:
+            <span id="totalCount">0</span>
+        </div>
+
+        <div class="status-card">
+            Last:
+            <span id="lastRisk">-</span>
+        </div>
+
+        <div class="status-card">
+            Status:
+            <span id="status" class="active">Active</span>
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                id="cityInput"
+                placeholder="Search city...">
+
+        </div>
+
+        <div id="suggestions"></div>
+
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="map-section">
+
+        <div id="map"></div>
+
+    </section>
+
+    <!-- ================= PREDICT BUTTON ================= -->
+   <section class="predict-section">
+
+    <button id="predictBtn">
+        Predict Risk
+    </button>
+
+    <div id="result">
+        No Prediction Yet
+    </div>
+
+    </section>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

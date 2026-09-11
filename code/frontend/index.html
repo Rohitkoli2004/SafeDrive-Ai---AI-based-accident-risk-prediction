@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeDrive AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+
+    <!-- LEFT -->
+    <div class="top-left">
+        <button class="icon-btn" onclick="goHome()">⏻</button>
+        <button class="icon-btn" onclick="goAnalytics()">⚡</button>
+    </div>
+
+    <!-- CENTER -->
+    <div class="top-center">
+        <h1>SafeDrive AI</h1>
+        <p>AI Based Accident Prediction</p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+        <button class="location-btn" onclick="getLocation()">📍</button>
+    </div>
+
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+    <div>Total: <span id="totalCount">0</span></div>
+    <div>Last: <span id="lastRisk">-</span></div>
+    <div>Status: <span class="status-active" id="statushtml01">
+<span id="status">Checking...</span></span></div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <!-- INPUTS -->
+    <div class="form-box">
+
+        <input id="lat" placeholder="Latitude">
+        <input id="lng" placeholder="Longitude">
+
+        <input id="distance" placeholder="Distance" value="1">
+        <input id="temp" placeholder="Temperature" value="30">
+        <input id="humidity" placeholder="Humidity" value="70">
+        <input id="visibility" placeholder="Visibility" value="10">
+        <input id="wind" placeholder="Wind Speed" value="5">
+        <input id="rain" placeholder="Precipitation" value="0.1">
+        <input id="weather" placeholder="Weather Code" value="50">
+        <input id="signal" placeholder="Signal" value="0">
+        <input id="day" placeholder="Day" value="1">
+        <input id="hour" placeholder="Hour" value="12">
+
+    </div>
+
+    <!-- MAP -->
+    <div class="map-box">
+        <div id="map"></div>
+    </div>
+
+</div>
+
+<!-- ACTION -->
+<div class="action">
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="result">No Prediction Yet</div>
+
+</div>
+
+<!-- BOTTOM -->
+<div class="bottom">
+
+    <div class="history">
+        <h3>History</h3>
+        <div id="historyBox"></div>
+    </div>
+
+    <div class="about">
+        <h3>About Us</h3>
+        <p>This system predicts accident risk based on environmental conditions.</p>
+        <p>Developed by Rohit Tayade & Prathamesh Rode</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

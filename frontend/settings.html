@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - SafeDrive AI</title>
+
+    <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="settings-navbar">
+
+         <button class="home-btn"
+                onclick="goHome()">
+            🏠
+        </button>
+        
+        <h1>Settings</h1>
+
+        <div class="nav-buttons">
+
+            <button onclick="goDashboard()">🚀</button>
+
+            <button onclick="goAnalytics()">⚡</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN GRID -->
+
+    <div class="settings-grid">
+
+
+        <!-- USER INFO -->
+
+        <div class="card">
+
+            <h2>User Information</h2>
+
+            <div class="info-row">
+                <span>Username</span>
+                <span id="username">Loading...</span>
+            </div>
+
+            <div class="info-row">
+                <span>Status</span>
+                <span id="backendStatus" class="active">
+                    Checking...
+                </span>
+            </div>
+
+            <div class="info-row">
+                <span>Role</span>
+                <span>User</span>
+            </div>
+
+        </div>
+
+
+        <!-- APP INFO -->
+
+        <div class="card">
+
+            <h2>Application Info</h2>
+
+            <div class="info-row">
+                <span>Project</span>
+                <span>SafeDrive AI</span>
+            </div>
+
+            <div class="info-row">
+                <span>Backend</span>
+                <span>FastAPI</span>
+            </div>
+
+            <div class="info-row">
+                <span>Frontend</span>
+                <span>HTML/CSS/JS</span>
+            </div>
+
+            <div class="info-row">
+                <span>Model</span>
+                <span>Random Forest</span>
+            </div>
+
+        </div>
+
+
+        <!-- ACCOUNT ACTIONS -->
+
+        <div class="card">
+
+            <h2>Account Actions</h2>
+
+            <button class="danger-btn"
+                    onclick="deleteAccount()">
+                Delete Account
+            </button>
+
+            <button class="normal-btn"
+                    onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- DEVELOPER -->
+
+        <div class="card">
+
+            <h2>Developer</h2>
+
+            <p class="developer">
+
+                Developed By <br><br>
+
+                Rohit Koli <br>
+
+                MCA Sem 2 <br>
+
+                SSCMR <br>
+
+                2026
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/settings.js"></script>
+
+</body>
+</html>

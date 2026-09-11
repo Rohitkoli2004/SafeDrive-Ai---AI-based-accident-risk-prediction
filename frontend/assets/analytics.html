@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics - SafeDrive AI</title>
+
+    <link rel="stylesheet" href="css/analytics.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<div class="analytics-navbar">
+
+    <!-- RIGHT -->
+    <div class="nav-left">
+        <button class="nav-btn" onclick="goHome()">🏠</button>
+        <button class="nav-btn" onclick="goDashboard()">🚀</button>
+    </div>
+
+    <!-- CENTER -->
+    <div class="nav-center">
+        <h1>Analytics Dashboard</h1>
+    </div>
+
+
+    <!-- LEFT -->
+    <div class="nav-right">
+    <button class="nav-btn" onclick="goSettings()">⚙</button>
+   </div>
+
+</div>
+
+<!-- STATS -->
+<div class="stats">
+    <div class="card" id="totalCard">Total: 0</div>
+    <div class="card" id="highCard">High %: 0</div>
+    <div class="card" id="avgCard">Avg Prob: 0</div>
+    <div class="card" id="commonCard">Common: -</div>
+</div>
+
+<!-- EMPTY STATE -->
+<div id="emptyMsg">No data available. Run predictions first.</div>
+
+<!-- CHARTS -->
+<div class="charts-container" id="chartsSection">
+
+    <div class="chart-box">
+        <h3>Risk Distribution</h3>
+        <canvas id="riskChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Prediction Timeline</h3>
+        <canvas id="timelineChart"></canvas>
+    </div>
+
+</div>
+
+<script src="js/analytics.js"></script>
+</body>
+</html>
