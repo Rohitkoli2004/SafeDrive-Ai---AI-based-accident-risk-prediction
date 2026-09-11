@@ -1,7 +1,7 @@
 🚗 SafeDrive AI
 AI-Based Accident Risk Prediction System
 SafeDrive AI is a machine-learning-powered web application designed to predict accident risk using location, weather conditions, and time-related factors. The system combines machine learning, real-time weather information, and interactive maps to provide users with meaningful accident-risk insights.
-
+________________________________________
 🌟 Overview
 Road accidents can be influenced by multiple environmental and geographical factors. SafeDrive AI uses a data-driven approach to analyze these factors and generate accident-risk predictions.
 The application provides an interactive interface where users can:
@@ -12,7 +12,7 @@ The application provides an interactive interface where users can:
 •	View prediction results and risk levels
 •	Access prediction history and analytics
 •	Manage their user account
-
+________________________________________
 ✨ Key Features
 Feature	Description
 🔐 User Authentication	Registration, login, and account management
@@ -23,7 +23,7 @@ Feature	Description
 📊 Risk Visualization	Presents prediction results in an easy-to-understand format
 📈 Analytics Dashboard	Provides insights from prediction data
 🕒 Prediction History	Maintains users' previous prediction information
-
+________________________________________
 🧠 How It Works
         User Input
             │
@@ -47,7 +47,7 @@ Feature	Description
             │
             ▼
       Analytics / Map
-
+________________________________________
 🛠️ Technology Stack
 Backend
  
@@ -75,7 +75,7 @@ Development
 •	Git
 •	GitHub
 •	Python Virtual Environment
-
+________________________________________
 📂 Project Structure
 SafeDrive-AI/
 │
@@ -98,41 +98,41 @@ SafeDrive-AI/
 ├── .gitignore
 └── README.md
 Note: Large datasets and trained model files are intentionally excluded from the Git repository.
-
+________________________________________
 ⚙️ Getting Started
 Prerequisites
 Make sure you have installed:
 •	Python 3.x
 •	Git
 •	A modern web browser
-
+________________________________________
 1. Clone the Repository
 git clone https://github.com/Rohitkoli2004/SafeDrive-Ai---AI-based-accident-risk-prediction.git
 cd SafeDrive-Ai---AI-based-accident-risk-prediction
-
+________________________________________
 2. Create a Virtual Environment
 On Windows:
 python -m venv venv
 Activate the environment:
 venv\Scripts\activate
-
+________________________________________
 3. Install Dependencies
 pip install -r requirements.txt
-
+________________________________________
 4. Configure the Weather API
 SafeDrive AI uses the OpenWeather API for weather information.
 If an API key is required by your local configuration, store it securely as an environment variable.
 Example:
 OPENWEATHER_API_KEY=your_api_key_here
 ⚠️ Never commit API keys, passwords, or other credentials to GitHub.
-
+________________________________________
 5. Run the Application
 Start the FastAPI application using the appropriate entry point configured in the project.
 For example:
 uvicorn main:app --reload
 Then open the application in your browser.
 Note: The exact command may vary depending on the FastAPI entry point used in your local configuration.
-
+________________________________________
 📊 Machine Learning Pipeline
 SafeDrive AI follows a structured machine-learning workflow:
 Data Collection
@@ -155,18 +155,18 @@ The repository includes:
 •	train.py — machine-learning model training
 •	Demo.py — application/demo functionality
 •	notebooks/ — machine-learning and data-analysis work
-
+________________________________________
 📍 Prediction Factors
 The prediction system considers factors related to:
 •	Location
 •	Weather conditions
 •	Time
 These inputs are processed by the machine-learning component to generate an accident-risk prediction.
-
+________________________________________
 🗺️ Mapping & Visualization
 SafeDrive AI integrates Leaflet.js to provide interactive map functionality.
 The mapping component supports location-based visualization and helps users understand geographical aspects of accident-risk predictions.
-
+________________________________________
 🗄️ Database
 The application uses SQLite for local data storage.
 The database supports functionality including:
@@ -174,7 +174,7 @@ The database supports functionality including:
 •	User authentication
 •	Account management
 •	Prediction-related information
-
+________________________________________
 🔒 Security & Privacy
 The project follows basic security practices for local development:
 •	API keys should be stored securely.
@@ -190,13 +190,13 @@ __pycache__/
 data/accident_data.csv
 models/accident_model.joblib
 *.db
-
+________________________________________
 📦 Large Files
 The following files are intentionally excluded from GitHub because of their size:
 data/accident_data.csv
 models/accident_model.joblib
 They remain available in the local development environment when required by the application.
-
+________________________________________
 🚀 Future Enhancements
 •	📱 Mobile application
 •	🚦 Live traffic-data integration
@@ -205,7 +205,7 @@ They remain available in the local development environment when required by the 
 •	🚨 Emergency alert system
 •	📍 Advanced geographical risk analysis
 •	📊 Improved predictive analytics
-
+________________________________________
 🎯 Objectives
 The primary objectives of SafeDrive AI are to:
 1.	Develop an AI-based accident-risk prediction system.
@@ -213,9 +213,9 @@ The primary objectives of SafeDrive AI are to:
 3.	Provide an interactive web-based prediction platform.
 4.	Visualize accident-risk information using maps and analytics.
 5.	Support data-driven road-safety awareness.
-
+________________________________________
 📸 Screenshots
-Screenshots of the application here to showcase the user interface.
+
 Login / Registration
 <img width="1096" height="825" alt="Login page" src="https://github.com/user-attachments/assets/000cbc20-fce6-4aa5-ba97-6b990641a5a4" />
 
@@ -228,14 +228,15 @@ Accident Risk Result
 Analytics
 <img width="1887" height="725" alt="Analytics" src="https://github.com/user-attachments/assets/d45e5c74-2f1a-48a0-b71e-0b3529934c17" />
 
+________________________________________
 👨‍💻 Author
 Rohit Koli
 SafeDrive AI – AI-Based Accident Risk Prediction System
-
+________________________________________
 📚 Project Type
 Academic / Educational Project
 Built to demonstrate the application of Machine Learning, Web Development, API Integration, Database Management, and Data Visualization to a real-world road-safety problem.
-
+________________________________________
 ⭐ Support
 If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
 
