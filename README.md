@@ -217,11 +217,17 @@ ________________________________________
 📸 Screenshots
 
 Login / Registration
- 
+<img width="940" height="708" alt="image" src="https://github.com/user-attachments/assets/24b91c27-2561-409a-816c-931e97028da7" />
+
 Prediction Dashboard
- Accident Risk Result
- Analytics
- ________________________________________
+<img width="940" height="474" alt="image" src="https://github.com/user-attachments/assets/b3d99fca-cb1c-4736-84b8-1cb60ff772fb" />
+
+Accident Risk Result
+<img width="940" height="463" alt="image" src="https://github.com/user-attachments/assets/f5349275-2e6c-438d-b656-928150ddb9f9" />
+ 
+Analytics
+<img width="940" height="361" alt="image" src="https://github.com/user-attachments/assets/f773b620-7f35-4e5e-bbfc-d445824c8166" />
+________________________________________
 👨‍💻 Author
 Rohit Koli
 SafeDrive AI – AI-Based Accident Risk Prediction System
