@@ -229,6 +229,7 @@ Analytics
 
 <img width="940" height="361" alt="image" src="https://github.com/user-attachments/assets/f773b620-7f35-4e5e-bbfc-d445824c8166" />
 ________________________________________
+
 👨‍💻 Author
 Rohit Koli
 SafeDrive AI – AI-Based Accident Risk Prediction System
